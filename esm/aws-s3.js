@@ -856,7 +856,7 @@ var S3Client = function () {
 
                             fd = new FormData();
                             key = "" + (config.dirName ? config.dirName + "/" : "") + file.name;
-                            url = "https://" + config.bucketName + ".s3.amazonaws.com/";
+                            url = "https://s3-eu-west-1.amazonaws.com/" + config.bucketName + "/";
 
                             fd.append("key", key);
                             fd.append("acl", "public-read");
